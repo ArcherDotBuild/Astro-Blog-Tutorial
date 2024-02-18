@@ -42,6 +42,33 @@ const data = await res.json()
 
 ## 03. Layouts
 
+MainLayout example
+
+```javascript
+---
+// Component imports
+import MainHead from './MainHead.astro'
+
+interface Props {
+  title?: string,
+  description?: string
+}
+
+const { title = 'My Astro Blog', description = 'My Astro Description' } = Astro.props as Props
+---
+
+<html lang="en">
+  <MainHead {title} {description} />
+    <body>
+      <slot>
+      </slot>
+    </body>
+</html>
+
+```
+
+## 04. CSS & styling
+
 ### AstroJS default information README file
 
 # Astro Starter Kit: Minimal

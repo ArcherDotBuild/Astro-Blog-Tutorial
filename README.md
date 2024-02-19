@@ -69,6 +69,106 @@ const { title = 'My Astro Blog', description = 'My Astro Description' } = Astro.
 
 ## 04. CSS & styling
 
+`<p style="font-size: 4rem">Styles in AstroJS</p>`
+
+#### CSS in JS style
+
+```javascript
+<p
+  style={{
+    backgroundColor: 'red',
+  }}
+>
+  CSS in JS style
+</p>
+```
+
+#### Scope to file CSS styles
+
+```jsx
+<MainLayout title="Home" description='My Home Page'>
+  <p>Testing styles</p>
+</MainLayout>
+
+<style>
+	p {
+		font-size: 4rem;
+	}
+</style>
+```
+
+#### Global CSS styles
+
+```jsx
+<MainLayout title="Home" description='My Home Page'>
+  <p>Testing styles</p>
+</MainLayout>
+
+<style is:global>
+	p {
+		font-size: 4rem;
+	}
+</style>
+```
+
+#### Adding SASS
+`npm i -D sass`
+
+```jsx
+<MainLayout title="Home" description='My Home Page'>
+  <p>Testing <span>styles</span></p>
+</MainLayout>
+
+<style lang="scss">
+	p {
+		span {
+			color: blue;
+		}
+	}
+</style>
+```
+
+#### Passing variables directly
+
+```jsx
+---
+const foregroundColor = "hsl(20, 50%, 50%)"
+const backgroundColor = "hsl(200, 50%, 50%)"
+---
+
+<MainLayout title="Home" description='My Home Page'>
+  <p>Testing styles</p>
+</MainLayout>
+
+<style define:vars={{ foregroundColor, backgroundColor }}>
+	p {
+		background-color: var(--backgroundColor);
+		color: var(--foregroundColor);
+	}
+</style>
+```
+
+#### Classlist directive
+
+```jsx
+---
+const isRed = true
+---
+
+<MainLayout title="Home" description='My Home Page'>
+  <p class:list={["big"], { red: isRed }}>Testing styles</p>
+</MainLayout>
+
+<style>
+	.big {
+		font-size: 4rem;	
+	}
+	.red {
+		color: red;
+	}
+</style>
+```
+
 ### AstroJS default information README file
 
 # Astro Starter Kit: Minimal

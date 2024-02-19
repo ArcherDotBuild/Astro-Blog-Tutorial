@@ -1,8 +1,20 @@
 ---
 // Component imports
 import MainLayout from '../layouts/MainLayout.astro'
+
+const isRed = true
 ---
 
 <MainLayout title="Home" description='My Home Page'>
   <h1>Home Page</h1>
+  <p class:list={["big", { red: isRed }]}>Testing styles</p>
 </MainLayout>
+
+<style>
+	.big {
+		font-size: 4rem;	
+	}
+	.red {
+		color: red;
+	}
+</style>

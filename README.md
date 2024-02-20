@@ -7,6 +7,10 @@ Project repo: https://github.com/coding-in-public/astro-blog-tutorial/
 Project video tutorial playlist: https://www.youtube.com/watch?v=F2pw1C9eKXw&list=PLoqZcxvpWzzeRwF8TEpXHtO7KYY6cNJeF
 Framework documentation: https://astro.build/
 
+### Useful lnks
+
+- https://astro.build/integrations
+
 ## 01. Install & Setup
 
 `npm create astro@latest`
@@ -179,6 +183,9 @@ https://preset-env.cssdb.org/
 `npm i postcss-preset-env`
 
 ## 05. Astro Components
+
+https://github.com/natemoo-re/astro-icon#readme
+`npm i astro-icon`
 
 ---
 

@@ -1,0 +1,20 @@
+---
+// Library imports
+import { Icon } from 'astro-icon/components';
+
+// Data imports
+import navData from '../data/navData.js'
+---
+
+<nav aria-label="Primary">
+  <div class="navbar">
+    <a href="/" aria-label="Go home">
+      <Icon name="logomark" width={60} />
+    </a>
+    <ul>
+      {navData.map((item) => (
+        <a href={item.path}>{item.name}</a>
+      ))}
+    </ul>
+  </div>
+</nav>

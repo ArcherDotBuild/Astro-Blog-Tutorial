@@ -112,6 +112,7 @@ const { title = 'My Astro Blog', description = 'My Astro Description' } = Astro.
 ```
 
 #### Adding SASS
+
 `npm i -D sass`
 
 ```jsx
@@ -153,6 +154,7 @@ const backgroundColor = "hsl(200, 50%, 50%)"
 ```jsx
 ---
 const isRed = true
+// const isRed = false
 ---
 
 <MainLayout title="Home" description='My Home Page'>
@@ -161,13 +163,24 @@ const isRed = true
 
 <style>
 	.big {
-		font-size: 4rem;	
+		font-size: 4rem;
 	}
 	.red {
 		color: red;
 	}
 </style>
 ```
+
+#### Installing PostCSS
+
+https://postcss.org/
+https://preset-env.cssdb.org/
+`npm i postcss`
+`npm i postcss-preset-env`
+
+## 05. Astro Components
+
+---
 
 ### AstroJS default information README file
 

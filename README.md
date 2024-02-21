@@ -182,10 +182,12 @@ https://preset-env.cssdb.org/
 `npm i postcss`
 `npm i postcss-preset-env`
 
-## 05. Astro Components
+## 05. Astro Components MINUTO 14
 
 https://github.com/natemoo-re/astro-icon#readme
 `npm i astro-icon`
+
+## 06. Routing basics
 
 ---
 

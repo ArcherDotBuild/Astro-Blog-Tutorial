@@ -193,7 +193,7 @@ https://icones.js.org
 
 ## 07. Markdown layouts
 
-## 08.
+## 08. Card component
 
 ---
 

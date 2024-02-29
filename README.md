@@ -195,6 +195,8 @@ https://icones.js.org
 
 ## 08. Card component
 
+## 09. Filter / sort posts
+
 ---
 
 ### AstroJS default information README file

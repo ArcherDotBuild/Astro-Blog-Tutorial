@@ -191,7 +191,12 @@ https://icones.js.org
 
 ## 06. Routing basics
 
-## 07. Markdown layouts
+## 07. Markdown layouts MINUTO 15
+
+```javascript
+const { frontmatter } = Astro.props
+console.log(frontmatter)
+```
 
 ## 08. Card component
 

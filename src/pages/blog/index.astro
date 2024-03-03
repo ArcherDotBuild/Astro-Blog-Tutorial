@@ -10,7 +10,7 @@ console.log('🚀 ~ allPosts', allPosts);
 <MainLayout title="Home" description='My Home Page'>
   {
     // allPosts.map((post) => <PostCard {post} />)
-    <PostCard post={allPosts[0]} />
+    <PostCard frontmatter={allPosts[0].frontmatter} url={allPosts[0].url} />
   }
 </MainLayout>
 

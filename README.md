@@ -200,6 +200,11 @@ console.log(frontmatter)
 
 ## 08. Card component
 
+```javascript
+<p>{frontmatter.title}</p>
+<pre>{JSON.stringify(frontmatter, null, 2)}</pre>
+```
+
 ## 09. Filter / sort posts
 
 ---

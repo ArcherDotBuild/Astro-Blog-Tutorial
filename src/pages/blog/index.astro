@@ -1,16 +1,29 @@
 ---
-// Component imports
-import MainLayout from '../../layouts/MainLayout.astro'
-import PostCard from '../../components/PostCard.astro'
+// component imports
+import MainLayout from "../../layouts/MainLayout.astro";
+import PostCard from "../../components/PostCard.astro";
 
-const allPosts = await Astro.glob('./*.md')
-console.log('🚀 ~ allPosts', allPosts);
+const allPosts = await Astro.glob("./*.md");
 ---
 
-<MainLayout title="Home" description='My Home Page'>
-  {
-    // allPosts.map((post) => <PostCard {post} />)
-    <PostCard frontmatter={allPosts[0].frontmatter} url={allPosts[0].url} />
-  }
+<MainLayout title="My Blog">
+  <section class="container" aria-label="New Blog Posts">
+    <h1 class="h1">New Blog Posts</h1>
+    <div class="post-container">
+      {
+        allPosts.map((post) => (
+          <PostCard
+            frontmatter={post.frontmatter}
+            url={post.url}
+            tagType="h2"
+          />
+        ))
+      }
+    </div>
+  </section>
 </MainLayout>
 
+<!-- <PostCard
+  frontmatter={allPosts[0].frontmatter}
+  url={allPosts[0].url} tagType='h2'
+/> -->

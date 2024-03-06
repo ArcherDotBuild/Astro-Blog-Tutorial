@@ -207,6 +207,8 @@ console.log(frontmatter)
 
 ## 09. Filter / sort posts
 
+## 10. Dynamic routes
+
 ---
 
 ### AstroJS default information README file

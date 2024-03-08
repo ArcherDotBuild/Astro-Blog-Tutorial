@@ -207,7 +207,7 @@ console.log(frontmatter)
 
 ## 09. Filter / sort posts
 
-## 10. Dynamic routes MINUTO 2
+## 10. Dynamic routes
 
 ---
 

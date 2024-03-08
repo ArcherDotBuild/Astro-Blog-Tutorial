@@ -43,7 +43,7 @@ const catPosts = formattedPosts.filter(
     <h1 class="h1">Posts about <span>{name}</span></h1>
     <div class="post-container">
       {
-        // allPosts.map((post) => (
+        // formattedPosts.map((post) => (
         catPosts.map((post) => (
           <PostCard
             frontmatter={post.frontmatter}

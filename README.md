@@ -209,6 +209,8 @@ console.log(frontmatter)
 
 ## 10. Dynamic routes
 
+## 11. Pagination
+
 ---
 
 ### AstroJS default information README file

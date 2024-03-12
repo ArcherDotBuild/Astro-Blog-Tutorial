@@ -211,6 +211,8 @@ console.log(frontmatter)
 
 ## 11. Pagination
 
+## 12 - Tag cloud
+
 ---
 
 ### AstroJS default information README file

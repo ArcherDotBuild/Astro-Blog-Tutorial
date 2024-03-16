@@ -211,7 +211,9 @@ console.log(frontmatter)
 
 ## 11. Pagination
 
-## 12 - Tag cloud
+## 12. Tag cloud
+
+## 13. Related posts
 
 ---
 

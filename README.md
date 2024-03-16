@@ -215,6 +215,8 @@ console.log(frontmatter)
 
 ## 13. Related posts
 
+## 14. Build a sitemap
+
 ---
 
 ### AstroJS default information README file

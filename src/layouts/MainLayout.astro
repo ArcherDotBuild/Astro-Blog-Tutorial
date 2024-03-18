@@ -10,16 +10,18 @@ import { Icon } from 'astro-icon';
 // style import
 import '../styles/global.css'
 
-interface Props {
-  title?: string,
-  description?: string
-}
-
-const { title = 'My Astro Blog', description = 'My Astro Description' } = Astro.props as Props
+const {
+  title = 'My Astro Blog',
+  description = 'My Astro Description',
+  image,
+  frontmatter,
+  robots
+  } = Astro.props
 ---
 
 <html lang="en">
-  <MainHead {title} {description} />
+  <MainHead {title} {description}
+  {image} {frontmatter} {robots} />
     <body>
       <Nav />
       <main>

@@ -23,7 +23,12 @@ const relatedPosts = formattedPosts.filter((post) =>
 // console.log('🚀 ~ relatedPosts', relatedPosts);
 ---
 
-<MainLayout {title} {description}>
+<MainLayout
+  {title} {description} {image}
+  image={frontmatter.image}
+  {frontmatter}
+  robots={frontmatter.robots}
+>
   <PostHeader {title} {description} {date} {category} {image} {author} />
   <div class="post-content">
     <div class="content">

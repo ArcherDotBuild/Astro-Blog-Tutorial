@@ -220,6 +220,21 @@ console.log(frontmatter)
 ## 15. Build an RSS feed
 
 ## 16. SEO basics
+
+Schema Markup Generator (JSON-LD)
+`https://technicalseo.com/tools/schema-markup-generator`
+
+What are rich results?
+Rich results are experiences on Google surfaces, such as Search, that go beyond the standard blue link. Rich results can include carousels, images, or other non-textual elements.
+https://search.google.com/test/rich-results
+
+Render stuff as HTML
+
+const paragraph = '<p>Hello</p>'
+<Fragment set:html={paragraph}>
+
+<div set:html={paragraph} />
+
 ---
 
 ### AstroJS default information README file

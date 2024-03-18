@@ -218,6 +218,8 @@ console.log(frontmatter)
 ## 14. Build a sitemap
 
 ## 15. Build an RSS feed
+
+## 16. SEO basics
 ---
 
 ### AstroJS default information README file

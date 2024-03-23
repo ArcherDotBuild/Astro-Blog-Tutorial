@@ -13,22 +13,25 @@ const formattedPosts = formatBlogPosts(allPosts, {limit: 3})
 
 <MainLayout title="My Blog">
   <section class="container about" aria-label="About Me">
-    <img src="/images/headshot.jpg" alt="My headshot" width="200" height="300">
+    <img
+      src="/images/headshot.jpg"
+      alt="My headshot"
+      width="200"
+      height="330"
+    />
     <div class="content">
       <h1 class="h1">My Blog</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum molestiae eius sapiente in, ratione hic ab modi placeat 
-      <Link
-        href="/about"
-        style="primary"
-        text="✋ Say Hello"
-      />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
+        tempora beatae mollitia architecto optio sapiente repellendus natus.
+      </p>
+      <Link href="/about/" style="secondary" text="👋 About Me" />
     </div>
   </section>
   <section class="container" aria-label="New Blog Posts">
     <h2 class="h1">New Blog Posts</h2>
     <div class="post-container">
       {
-        // allPosts.map((post) => (
         formattedPosts.map((post) => (
           <PostCard
             frontmatter={post.frontmatter}
@@ -40,4 +43,3 @@ const formattedPosts = formatBlogPosts(allPosts, {limit: 3})
     </div>
   </section>
 </MainLayout>
-

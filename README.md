@@ -221,6 +221,16 @@ console.log(frontmatter)
 
 ## 16. SEO basics
 
+## 17. Integrations (React, Tailwind, CMS, and more)
+
+Kick it into lightspeed with integrations  
+https://astro.build/integrations/  
+
+
+
+This repository contains JAX example code for loading and running the Grok-1 open-weights model.
+https://github.com/xai-org/grok-1
+
 Schema Markup Generator (JSON-LD)
 `https://technicalseo.com/tools/schema-markup-generator`
 

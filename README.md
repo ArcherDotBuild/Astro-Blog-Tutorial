@@ -227,10 +227,6 @@ Kick it into lightspeed with integrations
 https://astro.build/integrations/  
 
 
-
-This repository contains JAX example code for loading and running the Grok-1 open-weights model.
-https://github.com/xai-org/grok-1
-
 Schema Markup Generator (JSON-LD)
 `https://technicalseo.com/tools/schema-markup-generator`
 
@@ -240,12 +236,12 @@ https://search.google.com/test/rich-results
 
 Render stuff as HTML
 
+```javascript
 const paragraph = '<p>Hello</p>'
 <Fragment set:html={paragraph}>
 
 <div set:html={paragraph} />
-
----
+```
 
 ### AstroJS default information README file
 
